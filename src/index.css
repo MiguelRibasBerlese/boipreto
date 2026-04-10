@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Newsreader", serif;
+  --font-body: "Space Grotesk", sans-serif;
+  --font-label: "Space Grotesk", monospace;
+
+  --color-primary: #BB831C;
+  --color-on-primary: #000000;
+  --color-secondary: #3F4628;
+  --color-on-secondary: #ffffff;
+  --color-background: #0A0A0A;
+  --color-surface: #131313;
+  --color-surface-container: #1b1b1b;
+  --color-surface-container-high: #242424;
+  --color-surface-container-highest: #353535;
+  --color-on-surface: #e2e2e2;
+  --color-on-surface-variant: #d5c4b0;
+  --color-outline-variant: rgba(213, 196, 176, 0.15);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary;
+  }
+}
+
+@layer components {
+  .grainy-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+  }
+}
