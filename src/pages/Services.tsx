@@ -9,7 +9,6 @@ export default function Services() {
       icon: BarChart3,
       badge: 'Heritage Grade',
       description: 'Diagnóstico completo dos gargalos produtivos e financeiros, identificando janelas de lucro imediato na operação atual.',
-      price: 'A partir de R$ 4.500',
       cta: 'Agendar Diagnóstico',
       colSpan: 'md:col-span-7',
       bg: 'bg-surface-container'
@@ -19,7 +18,6 @@ export default function Services() {
       title: 'Assessoria de Dados',
       icon: Database,
       description: 'Implementação de cultura data-driven. Monitoramento mensal de KPI\'s zootécnicos e financeiros em tempo real.',
-      price: 'R$ 2.800 /mês',
       cta: 'Saiba Mais',
       colSpan: 'md:col-span-5',
       bg: 'bg-surface'
@@ -29,7 +27,6 @@ export default function Services() {
       title: 'Projetos Especializados',
       icon: PencilRuler,
       description: 'Desenvolvimento de infraestrutura tecnológica, confinamentos e estratégias de suplementação sob medida.',
-      price: 'Customizado',
       cta: 'Solicitar Orçamento',
       colSpan: 'md:col-span-5',
       bg: 'bg-surface'
@@ -39,7 +36,6 @@ export default function Services() {
       title: 'Projeção Plurianual',
       icon: LineChart,
       description: 'Planejamento estratégico de 5 anos focado em sucessão familiar e expansão de patrimônio imobiliário e animal.',
-      price: 'R$ 12.000 /projeto',
       cta: 'Iniciar Planejamento',
       colSpan: 'md:col-span-7',
       bg: 'bg-surface-container',
@@ -100,11 +96,7 @@ export default function Services() {
                   </ul>
                 )}
               </div>
-              <div className="mt-auto flex flex-col md:flex-row md:items-center justify-between pt-8 border-t border-white/5 gap-6">
-                <div>
-                  <p className="text-xs font-body uppercase text-on-surface-variant mb-1">Investimento</p>
-                  <p className="text-2xl font-body font-bold text-primary">{service.price}</p>
-                </div>
+              <div className="mt-auto flex pt-8 border-t border-white/5">
                 <button className="bg-primary text-on-primary font-body text-xs uppercase font-bold px-8 py-3 rounded-md hover:bg-primary/90 transition-all active:scale-95 flex items-center gap-2">
                   {service.cta}
                   <ArrowRight className="w-4 h-4" />
