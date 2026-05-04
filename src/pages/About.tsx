@@ -117,8 +117,8 @@ export default function About() {
                   className={`absolute ${s.mapTop} ${s.mapLeft} group-hover:scale-110 transition-transform`}
                 >
                   <div className="flex flex-col items-center">
-                    <span className="w-3 h-3 bg-primary rounded-full animate-pulse shadow-[0_0_10px_rgba(187,131,28,0.7)]"></span>
-                    <span className="mt-2 bg-surface-container-highest px-3 py-1 rounded-sm text-[9px] font-label font-bold text-primary uppercase tracking-widest border border-primary/20 whitespace-nowrap">
+                    <span className="w-2 h-2 bg-primary rounded-full animate-pulse shadow-[0_0_10px_rgba(187,131,28,0.7)]"></span>
+                    <span className="mt-2 bg-surface-container-highest px-2 py-0.5 rounded-sm text-[7px] leading-none font-label font-bold text-primary uppercase tracking-widest border border-primary/20 whitespace-nowrap">
                       {s.state}
                     </span>
                   </div>
