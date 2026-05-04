@@ -1,6 +1,11 @@
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '../lib/utils';
 
+/**
+ * Barra de navegação principal fixa no topo da página.
+ * Detecta a rota ativa via `useLocation` e aplica o estilo de destaque ao link correspondente.
+ * Em mobile, os links de navegação são ocultados; apenas o CTA "Falar com Consultor" permanece visível.
+ */
 export default function TopNavBar() {
   const location = useLocation();
   

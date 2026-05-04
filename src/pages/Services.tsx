@@ -1,6 +1,10 @@
 import { motion } from 'motion/react';
 import { BarChart3, Database, PencilRuler, LineChart, ArrowRight, CheckCircle2 } from 'lucide-react';
 
+/**
+ * Página de serviços — lista os quatro produtos da consultoria em cards com grid assimétrico
+ * (12 colunas) e exibe uma seção showcase com quote de posicionamento e CTAs de conversão.
+ */
 export default function Services() {
   const services = [
     {

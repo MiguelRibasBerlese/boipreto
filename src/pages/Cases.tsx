@@ -1,6 +1,11 @@
 import { motion } from 'motion/react';
 import { TrendingUp, Landmark, ChevronRight } from 'lucide-react';
 
+/**
+ * Página de cases de sucesso — apresenta dois resultados auditáveis:
+ * (1) Fazenda Nova Era (TO) com métricas de margem e ROI, e
+ * (2) Aumento de Capacidade de Suporte com comparativo antes/depois de UA/Hectare.
+ */
 export default function Cases() {
   return (
     <div className="pt-32 pb-24">

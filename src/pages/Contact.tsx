@@ -1,6 +1,9 @@
-import { motion } from 'motion/react';
 import { MapPin, Mail, Tractor } from 'lucide-react';
 
+/**
+ * Página de contato — layout assimétrico com coluna editorial (endereço, imagem atmosférica)
+ * e formulário de captura de lead com campos de nome, WhatsApp, estado e descrição do desafio.
+ */
 export default function Contact() {
   return (
     <div className="relative pt-32 pb-20 overflow-hidden">

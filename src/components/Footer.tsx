@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 
+/**
+ * Rodapé global do site com logotipo, links institucionais (privacidade, termos, redes sociais)
+ * e copyright. Renderizado pelo Layout em todas as páginas.
+ */
 export default function Footer() {
   return (
     <footer className="bg-background border-t border-white/5">

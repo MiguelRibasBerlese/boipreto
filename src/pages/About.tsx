@@ -1,5 +1,10 @@
 import { motion } from 'motion/react';
 
+/**
+ * Página institucional — comunica a essência da marca em quatro seções:
+ * Hero editorial, narrativa Nelore x Angus (equilíbrio semiótico),
+ * "O Executivo do Campo" (perfil do cliente ideal) e mapa de presença territorial.
+ */
 export default function About() {
   return (
     <div className="pt-32">

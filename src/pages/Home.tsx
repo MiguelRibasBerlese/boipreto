@@ -1,6 +1,11 @@
 import { motion } from 'motion/react';
 import { TrendingUp, Landmark, Brain, LineChart, BarChart3 } from 'lucide-react';
 
+/**
+ * Página inicial — apresenta o posicionamento de marca da Boi Preto em quatro seções:
+ * Hero (proposta de valor), Problemas (pain points do produtor), Solução (metodologia)
+ * e CTA final para conversão.
+ */
 export default function Home() {
   return (
     <div className="pt-24">
