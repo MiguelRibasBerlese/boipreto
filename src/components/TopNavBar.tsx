@@ -20,8 +20,8 @@ export default function TopNavBar() {
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/5">
       <nav className="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
-        <Link to="/" className="text-2xl font-headline italic tracking-wider text-primary">
-          Boi Preto
+        <Link to="/">
+          <img src="/logo.jpeg" alt="Boi Preto Consultoria" className="h-10 w-auto object-contain" />
         </Link>
         
         <div className="hidden md:flex gap-10 items-center">
