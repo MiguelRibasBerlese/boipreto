@@ -78,8 +78,8 @@ export const IMAGES = {
     alt: 'Gado pastando - Fazenda Nova Era',
   },
   contactAtmospheric: {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDkiIEL4dDAS4y_G6n43POEXAcw6jrhbOzuIHK_O67v1yTuHmXN5MJmwzDY9g-kxlrlv1Z6y70LetFsPuNNx5d55N8DY6UO6PezWlhCG4nwG8JsnLw8aoctI633PPCd-ySgIoDsxYKbr9964IrB3Wgsuia22pEMJB9oqQd68UwHjduI-oEqxsvaqCUmkUAuJbYAwAnFkca-V0ioQmz_nOpinsfCRwWjJ_c9x-KjM_r8dhXNiiNyYK3-62IVoG37oXZ6J-J73woNkVfC',
-    alt: 'Escritório rural - Boi Preto',
+    src: '/escritorio.jpg',
+    alt: 'Escritório Central Boi Preto - Araguaína TO',
   },
   contactMap: {
     src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDNPLc-JpZS0agVyf-tJI3wp_iw4emtji-KBSkAD8nmT3UzIS036dv_8QIAzZu4XJeEcyVMzUf_Kl2ydf_evtvUsfBSCmpeWiVF-6U8khJdyKZ80ETjxidYgwX31vXlhnsnRLfH17HoYZl7KwxqvFJ0Y3MOYChmkFkCopI_WM_L7wFX0zdAwdnPLnZrboA18LE2XvCS2gSoI4ueXLdZfDpklPvTzUQPMYjyxkVe1gHOgEJobOCdXeXqYStfsY7ii76nbPKXzx5zUAXc',
