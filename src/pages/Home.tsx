@@ -15,9 +15,9 @@ export default function Home() {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative min-h-[95vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 overflow-hidden">
           <Image
-            className="w-full h-full object-contain object-center opacity-25 grayscale"
+            className="w-full h-full object-cover object-[center_30%] opacity-25 grayscale"
             src={IMAGES.heroAngus.src}
             alt={IMAGES.heroAngus.alt}
             loading="eager"
