@@ -62,12 +62,12 @@ export const IMAGES = {
     alt: 'Rebanho nelore em pastagem - pecuária moderna',
   },
   aboutNelore: {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCQzKOsutvvni0ezdJdRFBQNzkSvd6t1PrC020YF0QMRsEr-khMwmXWnya7fKswsKY9eH9RY2ca5ATjZk6oJyHB-FQNiwaIe9tTVBWPChIVwJdsSmKRiqV5WsKCdipdspPCgG8f8-o_y3UjxsW-DinIPeI6lIdo3iC4tiX-OdI2dmtTxvomHpBWmiBb549ZXHaiV7e46pxqWGzYYEJhWhFwjVU8dZMPy6kK2VMIy06YZhuZ-eiOe8IZYy9EkEFXRCFrizn6yqlrU41f',
-    alt: 'Nelore bull - rusticidade brasileira',
+    src: '/nelore-angus.jpg',
+    alt: 'Boi nelore e angus - equilíbrio entre raças',
   },
   aboutExecutive: {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBp3WL_z-kfW6DuHuYkAKQcK6-sO43KFxFvtIuDIpY0dBTdc84rCWzjpK-CFgsnkkJDgbbkoUAyk3nLKomIuABM_gEzF4N-6n17f2Bqnw16wvLuMFg_sWn6VqiAkK9bor6AVJhh7fUkxaiA7rW__nK-CGE9256WlIcozLnkAG9PK_5dCweU5q3lRIXDk4wWUjMrMf61XoZ0RY-BkN_LOtx4d5Ka1PNcpuUfqJSwzRLJeIgTa',
-    alt: 'Modern rancher - o executivo do campo',
+    src: '/escritorio.jpg',
+    alt: 'Equipe Boi Preto Consultoria no escritório',
   },
   aboutMap: {
     src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuByQn6Y5wNQuqTDUI4ZgGuIJv_qp8hc9qmHwJCe31lbDH2LNXGpj3rn0SzO7hnH3GBt2pnwwFa20tZr7bBDEUPcC8OpQRSUMaKl9xVjLCdxHIQOHiTF6k8iqHzjgSZe6zj1fymhxkspvn_FLWkO5Dt91a5jWVT9vjSoOaqKI-yoC2531hOC6qGPMJfB4d_mUitxzJKGaoUgcpqJ0ierzH3jBRvsfgSm4lUeMB8ZLwHrOSngzg81PTp64XZr2qJBu33SPVKtXaTbTz94',
@@ -299,25 +299,18 @@ export const ABOUT = {
   territory: {
     badge: 'Presença Territorial',
     title: 'Onde a terra encontra a gestão.',
-    states: [
-      {
-        state: 'Mato Grosso',
-        code: 'MT',
-        desc: 'O coração pulsante da pecuária de corte, onde aplicamos as estratégias de confinamento mais avançadas do país.',
-      },
-      {
-        state: 'Pará',
-        code: 'PA',
-        desc: 'Foco em sustentabilidade e recuperação de pastagens degradadas para alta produtividade a pasto.',
-      },
-      {
-        state: 'Tocantins',
-        code: 'TO',
-        desc: 'Hub logístico estratégico onde otimizamos a comercialização e o fluxo de caixa dos produtores.',
-      },
-    ] satisfies StateInfo[],
   },
 } as const;
+
+/** Estados de atuação exibidos no mapa e na lista lateral da página Sobre. */
+export const ATUACAO_STATES: StateInfo[] = [
+  { state: 'Tocantins',    code: 'TO', mapTop: 'top-[25%]', mapLeft: 'left-[52%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
+  { state: 'Pará',         code: 'PA', mapTop: 'top-[18%]', mapLeft: 'left-[44%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
+  { state: 'Maranhão',     code: 'MA', mapTop: 'top-[22%]', mapLeft: 'left-[60%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
+  { state: 'Piauí',        code: 'PI', mapTop: 'top-[28%]', mapLeft: 'left-[65%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
+  { state: 'Minas Gerais', code: 'MG', mapTop: 'top-[52%]', mapLeft: 'left-[58%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
+  { state: 'Goiás',        code: 'GO', mapTop: 'top-[42%]', mapLeft: 'left-[50%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
+];
 
 // ─── Página: Contato ──────────────────────────────────────────────────────────
 

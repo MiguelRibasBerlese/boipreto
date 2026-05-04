@@ -18,11 +18,15 @@ export interface Service {
   features?: string[];
 }
 
-/** State/region card displayed on the About page map section. */
+/** State/region card — used in the About page map and sidebar. */
 export interface StateInfo {
   state: string;
   code: string;
   desc: string;
+  /** Tailwind top-[x] class for the floating dot position on the map image. */
+  mapTop: string;
+  /** Tailwind left-[x] class for the floating dot position on the map image. */
+  mapLeft: string;
 }
 
 /** A key metric displayed with a large value and a label. */
