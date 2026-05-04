@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-center w-full px-12 py-12 max-w-screen-2xl mx-auto">
         <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
           <Image
-            src="/logo.jpeg"
+            src="/logo.png"
             alt="Boi Preto Consultoria"
             className="h-16 w-auto mb-4"
           />
