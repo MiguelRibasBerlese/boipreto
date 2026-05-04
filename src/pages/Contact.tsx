@@ -30,18 +30,25 @@ export default function Contact() {
             </p>
 
             <div className="pt-8 space-y-6">
-              <a
-                href={address.mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-start gap-4 group hover:opacity-80 transition-opacity"
-              >
-                <MapPin className="text-primary w-8 h-8 group-hover:scale-110 transition-transform shrink-0" />
-                <div>
-                  <h4 className="font-logo font-bold text-on-surface uppercase tracking-widest text-xs">{address.label}</h4>
-                  <p className="text-on-surface-variant text-sm mt-1">{address.value}</p>
-                </div>
-              </a>
+              <div>
+                <a
+                  href={address.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-4 group hover:opacity-80 transition-opacity"
+                >
+                  <MapPin className="text-primary w-8 h-8 group-hover:scale-110 transition-transform shrink-0" />
+                  <div>
+                    <h4 className="font-logo font-bold text-on-surface uppercase tracking-widest text-xs">{address.label}</h4>
+                    <p className="text-on-surface-variant text-sm mt-1">{address.value}</p>
+                  </div>
+                </a>
+                <Image
+                  src="/escritorio.jpg"
+                  alt="Escritório Central Boi Preto - Araguaína TO"
+                  className="w-full max-h-[320px] object-cover object-top rounded-sm mt-6 border border-primary/10"
+                />
+              </div>
               <div className="flex items-start gap-4 group">
                 <Mail className="text-primary w-8 h-8 group-hover:scale-110 transition-transform" />
                 <div>
