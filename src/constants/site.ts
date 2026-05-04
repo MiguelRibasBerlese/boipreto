@@ -304,12 +304,12 @@ export const ABOUT = {
 
 /** Estados de atuação exibidos no mapa e na lista lateral da página Sobre. */
 export const ATUACAO_STATES: StateInfo[] = [
-  { state: 'Pará',         code: 'PA', mapTop: 'top-[15%]', mapLeft: 'left-[36%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
-  { state: 'Maranhão',     code: 'MA', mapTop: 'top-[20%]', mapLeft: 'left-[50%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
-  { state: 'Tocantins',    code: 'TO', mapTop: 'top-[28%]', mapLeft: 'left-[46%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
-  { state: 'Piauí',        code: 'PI', mapTop: 'top-[27%]', mapLeft: 'left-[57%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
-  { state: 'Goiás',        code: 'GO', mapTop: 'top-[43%]', mapLeft: 'left-[46%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
-  { state: 'Minas Gerais', code: 'MG', mapTop: 'top-[52%]', mapLeft: 'left-[54%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
+  { state: 'Pará',         code: 'PA', mapTop: 'top-[30%]', mapLeft: 'left-[52%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
+  { state: 'Maranhão',     code: 'MA', mapTop: 'top-[32%]', mapLeft: 'left-[61%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
+  { state: 'Tocantins',    code: 'TO', mapTop: 'top-[42%]', mapLeft: 'left-[57%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
+  { state: 'Piauí',        code: 'PI', mapTop: 'top-[37%]', mapLeft: 'left-[63%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
+  { state: 'Goiás',        code: 'GO', mapTop: 'top-[53%]', mapLeft: 'left-[55%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
+  { state: 'Minas Gerais', code: 'MG', mapTop: 'top-[58%]', mapLeft: 'left-[61%]', desc: 'Região de atuação da Boi Preto Consultoria.' },
 ];
 
 // ─── Página: Contato ──────────────────────────────────────────────────────────
