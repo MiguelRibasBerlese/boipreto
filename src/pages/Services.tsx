@@ -25,7 +25,7 @@ export default function Services() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-end gap-12">
           <div className="md:w-2/3">
             <span className="font-body text-primary tracking-[0.3em] uppercase text-xs mb-4 block">{header.badge}</span>
-            <h1 className="font-logo italic text-5xl md:text-7xl leading-[1.1] text-on-surface mb-8">
+            <h1 className="font-logo text-5xl md:text-7xl font-bold leading-[1] text-on-surface mb-8 tracking-tighter">
               {header.headline}
             </h1>
           </div>

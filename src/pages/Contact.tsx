@@ -21,7 +21,7 @@ export default function Contact() {
               <span className="text-primary font-headline italic text-sm">{badge}</span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-logo font-medium leading-[1.1] text-on-surface">
+            <h1 className="font-logo text-5xl md:text-7xl font-bold leading-[1] text-on-surface mb-8 tracking-tighter">
               {headline} <span className="italic text-primary block mt-2">{headlineHighlight}</span>
             </h1>
 
