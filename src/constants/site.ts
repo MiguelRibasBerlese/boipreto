@@ -322,7 +322,8 @@ export const CONTACT = {
     'A gestão de precisão não é mais um diferencial, é a base da sobrevivência no novo agro. Preencha os dados e receba um diagnóstico preliminar da nossa equipe técnica.',
   address: {
     label: 'Escritório Central',
-    value: 'Rua das Fazendas, Araguaína-TO',
+    value: 'Av. José de Brito, 794 - St. Anhanguera, Araguaína - TO, 77818-530',
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Av.+José+de+Brito,+794,+Araguaína,+TO',
   },
   email: {
     label: 'Email Direto',

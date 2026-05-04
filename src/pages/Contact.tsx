@@ -30,13 +30,18 @@ export default function Contact() {
             </p>
 
             <div className="pt-8 space-y-6">
-              <div className="flex items-start gap-4 group">
-                <MapPin className="text-primary w-8 h-8 group-hover:scale-110 transition-transform" />
+              <a
+                href={address.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-4 group hover:opacity-80 transition-opacity"
+              >
+                <MapPin className="text-primary w-8 h-8 group-hover:scale-110 transition-transform shrink-0" />
                 <div>
-                  <h4 className="font-label font-bold text-on-surface uppercase tracking-widest text-xs">{address.label}</h4>
+                  <h4 className="font-logo font-bold text-on-surface uppercase tracking-widest text-xs">{address.label}</h4>
                   <p className="text-on-surface-variant text-sm mt-1">{address.value}</p>
                 </div>
-              </div>
+              </a>
               <div className="flex items-start gap-4 group">
                 <Mail className="text-primary w-8 h-8 group-hover:scale-110 transition-transform" />
                 <div>
