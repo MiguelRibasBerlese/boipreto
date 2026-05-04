@@ -19,7 +19,7 @@ export default function Cases() {
             <span className="inline-block py-1 px-3 mb-4 rounded bg-surface-container-high text-primary font-headline italic text-xs border border-primary/10">
               {hero.badge}
             </span>
-            <h1 className="text-6xl md:text-8xl font-headline italic leading-[1.1] mb-8">
+            <h1 className="text-6xl md:text-8xl font-logo italic leading-[1.1] mb-8">
               {hero.headline} <span className="text-primary">{hero.headlineHighlight}</span> {hero.headlineSuffix}
             </h1>
           </div>

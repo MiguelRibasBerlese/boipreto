@@ -16,7 +16,7 @@ export default function About() {
       <section className="px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-end mb-32">
         <div className="lg:col-span-8">
           <span className="font-label text-primary uppercase tracking-[0.4em] text-[10px] mb-6 block">{hero.badge}</span>
-          <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl leading-[0.95] italic text-on-surface">
+          <h1 className="font-logo text-5xl md:text-7xl lg:text-8xl leading-[0.95] italic text-on-surface">
             {hero.headline} <br/>
             <span className="text-primary">{hero.headlineHighlight}</span> <br/>
             {hero.headlineSuffix}
