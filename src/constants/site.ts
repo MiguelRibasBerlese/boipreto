@@ -66,7 +66,7 @@ export const IMAGES = {
     alt: 'Boi nelore e angus - equilíbrio entre raças',
   },
   aboutExecutive: {
-    src: '/Escritorio%20Boi%20Preto.jpg',
+    src: '/escritorio.jpg',
     alt: 'Equipe Boi Preto Consultoria no escritório',
   },
   aboutMap: {

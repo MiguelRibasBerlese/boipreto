@@ -83,9 +83,9 @@ export default function About() {
           </div>
           <div className="lg:col-span-7">
             {/* Foto real da equipe — sem filtros de cor */}
-            <div className="max-h-[400px] bg-surface-container-highest rounded-sm overflow-hidden border border-primary/10">
+            <div className="overflow-hidden border border-primary/10">
               <Image
-                className="w-full max-h-[400px] object-contain"
+                className="w-full max-h-[480px] object-cover object-top rounded-sm"
                 src={IMAGES.aboutExecutive.src}
                 alt={IMAGES.aboutExecutive.alt}
               />
