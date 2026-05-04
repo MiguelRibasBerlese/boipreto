@@ -103,9 +103,9 @@ export default function About() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
           <div className="lg:col-span-2 relative group">
-            <div className="aspect-square lg:aspect-video bg-surface-container rounded-sm p-12 flex items-center justify-center border border-primary/10">
+            <div className="aspect-square lg:aspect-video bg-surface-container rounded-sm p-6 flex items-center justify-center border border-primary/10">
               <Image
-                className="max-w-full max-h-full opacity-40 hover:opacity-60 transition-opacity duration-500 brightness-150 grayscale"
+                className="w-[90%] h-[90%] object-contain opacity-60 hover:opacity-80 transition-opacity duration-500 brightness-150 grayscale"
                 src={IMAGES.aboutMap.src}
                 alt={IMAGES.aboutMap.alt}
               />
