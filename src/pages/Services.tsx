@@ -91,7 +91,7 @@ export default function Services() {
           <div className="md:w-1/2 relative">
             <div className="absolute -top-4 -left-4 w-24 h-24 border-t border-l border-primary/30 z-0"></div>
             <Image
-              className="w-full rounded relative z-10 grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl border border-white/5"
+              className="w-full max-h-[420px] object-cover object-center rounded relative z-10 grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl border border-white/5"
               src={IMAGES.serviceShowcase.src}
               alt={IMAGES.serviceShowcase.alt}
             />

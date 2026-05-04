@@ -33,9 +33,9 @@ export default function About() {
       <section className="mb-40 overflow-hidden">
         <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
           <div className="relative">
-            <div className="aspect-[4/5] bg-surface-container overflow-hidden rounded-sm group">
+            <div className="bg-surface-container overflow-hidden rounded-sm group">
               <Image
-                className="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-700"
+                className="w-full max-h-[500px] object-contain grayscale brightness-75 group-hover:scale-105 transition-transform duration-700"
                 src={IMAGES.aboutNelore.src}
                 alt={IMAGES.aboutNelore.alt}
               />
@@ -83,9 +83,9 @@ export default function About() {
           </div>
           <div className="lg:col-span-7">
             {/* Foto real da equipe — sem filtros de cor */}
-            <div className="aspect-video bg-surface-container-highest rounded-sm overflow-hidden border border-primary/10">
+            <div className="max-h-[400px] bg-surface-container-highest rounded-sm overflow-hidden border border-primary/10">
               <Image
-                className="w-full h-full object-cover"
+                className="w-full max-h-[400px] object-contain"
                 src={IMAGES.aboutExecutive.src}
                 alt={IMAGES.aboutExecutive.alt}
               />
