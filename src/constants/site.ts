@@ -42,7 +42,7 @@ export const FOOTER_LINKS: FooterLink[] = [
 
 export const IMAGES = {
   heroAngus: {
-    src: '/boi-nelore.jpg',
+    src: '/Boi-Nelore.jpg',
     alt: 'Boi nelore em pastagem ao amanhecer',
   },
   farmEquipment: {
@@ -54,19 +54,19 @@ export const IMAGES = {
     alt: 'Nelore bull',
   },
   ctaBackground: {
-    src: '/rebanho-nelore.jpg',
+    src: '/Rebanho-Nelore.jpg',
     alt: 'Rebanho nelore em pastagem',
   },
   serviceShowcase: {
-    src: '/rebanho-nelore.jpg',
+    src: '/Rebanho-Nelore.jpg',
     alt: 'Rebanho nelore em pastagem - pecuária moderna',
   },
   aboutNelore: {
-    src: '/nelore-angus.jpg',
+    src: '/Nelore-Angus.jpg',
     alt: 'Boi nelore e angus - equilíbrio entre raças',
   },
   aboutExecutive: {
-    src: '/escritorio.jpg',
+    src: '/Escritorio%20Boi%20Preto.jpg',
     alt: 'Equipe Boi Preto Consultoria no escritório',
   },
   aboutMap: {
