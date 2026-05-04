@@ -15,7 +15,7 @@ export default function Footer() {
           <Image
             src="/logo.png"
             alt="Boi Preto Consultoria"
-            className="h-32 w-auto mb-4"
+            className="h-[100px] w-auto mb-4"
           />
           <span className="font-logo font-bold text-sm text-primary tracking-wide">
             {BRAND.name} Consultoria
