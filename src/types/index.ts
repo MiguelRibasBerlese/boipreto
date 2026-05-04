@@ -7,6 +7,8 @@ export interface NavItem {
 /** Consulting service card displayed on the Services page. */
 export interface Service {
   id: string;
+  /** Key of the icon in the ICON_MAP defined in Services.tsx. */
+  iconName: string;
   title: string;
   description: string;
   cta: string;

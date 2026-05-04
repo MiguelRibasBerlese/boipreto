@@ -58,8 +58,8 @@ export const IMAGES = {
     alt: 'Rebanho nelore em pastagem',
   },
   serviceShowcase: {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAByVmtUmM2L9wVTKS3WjtmhTQO6VWWJTcT1oSqBKkcsxNA1NsYc3zQ6WdbDd8kzdcvgBWeCkW-U3nXQsj0DZddgnr-muA5VcRnaG-hJU73L7kzo8jwNah6X8Mc-MNWMXB12dJdag9VtvgO46mVCt9OEwF1OR7EKENzEqjxfyLKDQIiRQHTJLdB0YfcRoZ-IedCzcpk9YWCgfyWMgRZxTQGlcnnxQ9wpl6GkjZFrr4xrSpWxmC0cD9n2zQOVqDx12-dDCpmSTJ6Popf',
-    alt: 'Pecuária Moderna',
+    src: '/rebanho-nelore.jpg',
+    alt: 'Rebanho nelore em pastagem - pecuária moderna',
   },
   aboutNelore: {
     src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCQzKOsutvvni0ezdJdRFBQNzkSvd6t1PrC020YF0QMRsEr-khMwmXWnya7fKswsKY9eH9RY2ca5ATjZk6oJyHB-FQNiwaIe9tTVBWPChIVwJdsSmKRiqV5WsKCdipdspPCgG8f8-o_y3UjxsW-DinIPeI6lIdo3iC4tiX-OdI2dmtTxvomHpBWmiBb549ZXHaiV7e46pxqWGzYYEJhWhFwjVU8dZMPy6kK2VMIy06YZhuZ-eiOe8IZYy9EkEFXRCFrizn6yqlrU41f',
@@ -169,44 +169,37 @@ export const SERVICES_PAGE = {
   },
 } as const;
 
-export const SERVICES: Service[] = [
+export const SERVICES_DATA: Service[] = [
   {
     id: '01',
+    iconName: 'BarChart3',
     title: 'Análise de Oportunidade',
-    badge: 'Heritage Grade',
     description:
-      'Diagnóstico completo dos gargalos produtivos e financeiros, identificando janelas de lucro imediato na operação atual.',
+      'Um raio-x completo da fazenda. Levantamos o que está travando a produção e o financeiro para descobrir onde o dinheiro está escapando, focando no que pode ser ajustado agora para dar lucro rápido na operação atual.',
     cta: 'Agendar Diagnóstico',
-    colSpan: 'md:col-span-7',
+    colSpan: 'md:col-span-6',
     bg: 'bg-surface-container',
   },
   {
     id: '02',
-    title: 'Assessoria de Dados',
+    iconName: 'ClipboardCheck',
+    title: 'Auditoria',
     description:
-      "Implementação de cultura data-driven. Monitoramento mensal de KPI's zootécnicos e financeiros em tempo real.",
-    cta: 'Saiba Mais',
-    colSpan: 'md:col-span-5',
+      'Conferência rigorosa dos números da propriedade. Cruzamos os dados do escritório com a realidade do campo (rebanho, insumos, maquinário e caixa) para garantir que as contas fecham e evitar qualquer tipo de perda, desvio ou desperdício.',
+    cta: 'Solicitar Auditoria',
+    colSpan: 'md:col-span-6',
     bg: 'bg-surface',
   },
   {
     id: '03',
-    title: 'Projetos Especializados',
+    iconName: 'LineChart',
+    title: 'Projeção Agropecuária',
     description:
-      'Desenvolvimento de infraestrutura tecnológica, confinamentos e estratégias de suplementação sob medida.',
-    cta: 'Solicitar Orçamento',
-    colSpan: 'md:col-span-5',
-    bg: 'bg-surface',
-  },
-  {
-    id: '04',
-    title: 'Projeção Plurianual',
-    description:
-      'Planejamento estratégico de 5 anos focado em sucessão familiar e expansão de patrimônio imobiliário e animal.',
+      'Planejamento de longo prazo para o futuro da sua fazenda. Desenhamos a rota segura para os próximos anos, focando em fazer a terra e o rebanho crescerem, além de preparar o terreno para a sucessão familiar.',
     cta: 'Iniciar Planejamento',
-    colSpan: 'md:col-span-7',
+    colSpan: 'md:col-span-12',
     bg: 'bg-surface-container',
-    features: ['Análise de Fluxo de Caixa', 'Cenários de Mercado (Hedge)'],
+    features: ['Previsão e Controle do Fluxo de Caixa', 'Proteção contra os altos e baixos do mercado (Hedge)'],
   },
 ];
 
