@@ -21,7 +21,7 @@ export default function TopNavBar() {
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/5">
       <nav className="flex justify-between items-center w-full px-8 py-2 max-w-screen-2xl mx-auto">
         <Link to="/">
-          <img src="/logo.png" alt="Boi Preto Consultoria" className="h-16 w-auto object-contain" />
+          <img src="/logo.png" alt="Boi Preto Consultoria" className="h-32 w-auto object-contain" />
         </Link>
         
         <div className="hidden md:flex gap-10 items-center">
