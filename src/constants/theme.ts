@@ -21,6 +21,7 @@ export const COLORS = {
 } as const;
 
 export const FONTS = {
+  logo: '"Montserrat", sans-serif',
   headline: '"Newsreader", serif',
   body: '"Space Grotesk", sans-serif',
   label: '"Space Grotesk", monospace',
