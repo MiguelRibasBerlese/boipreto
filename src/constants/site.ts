@@ -42,8 +42,8 @@ export const FOOTER_LINKS: FooterLink[] = [
 
 export const IMAGES = {
   heroAngus: {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDpuaPEd3cFApCJvvRsi3J3qbCtjMF4K1v6mtk0MJtyBJqyiwZ0jjY22wDvzFNDpeSGyNI643Z4NwvfXxR25i_q884dxDJMaJ3nKlpS9hRsglPOajXP8JmfPdN_l2iMoZBBKaBdtVC1Hwwv0qrcTOsuEyWUp7Clenv95QfBCYyuPGuNWG6QgoYWZDScdFQJtpxU9TmfiJbtPrs4E9JZfa8g-WpuFp-9MYDz7NmFnKYUSCBNmDz8nmR9BAeIbiN-h7An6MSFyzO8UWlC',
-    alt: 'Cinematic wide shot of dark Angus cattle in a misty morning pasture',
+    src: '/boi-nelore.jpg',
+    alt: 'Boi nelore em pastagem ao amanhecer',
   },
   farmEquipment: {
     src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCs8sTl5oJLl_W1pkqYMINWPPA-CC-BnddZNio2IjwEoqN3NNnTSFr3UY_JvkSqgUxVd3MwQAdPBtW7ZDaVTS0o7KQiAOjpisBnjxeJpn5x91WNyhOZwMcYsy7brRLa2ronEanA5KmpL3gfA1WKxR7ApX7iTKiure_D5bXBAGqeh5Zp7TeIHZkKHa8UJTH3gI6IIdmTQIxIGbSGc5mcAozIQGFQ4tBOMwvJD7FuuWoocjrdpWwg6QLLMqzfSDmdjwY5HnbXZ2W3yIHW',
@@ -54,8 +54,8 @@ export const IMAGES = {
     alt: 'Nelore bull',
   },
   ctaBackground: {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBQm0syYFyVE5Uv3jRPbSIxFLJ5lX3m0t6Sq6xVr8c5XV3TX7Q9Gi6FRyB8dF8Kf7_PaiLdaOxDMt7wSif7EUEZ1BSIry1r1FbH45r8gCjw08So9MQd8ApwlqxiiWO6Uv9Xnxj5sXcpF6JFyhTKEUzHCTBht0gnomBvcEO9iQSMIcAkf7wvLI8I89jmx1SWe6vnPmAmvXrGlpgn4xrBUHFdki34fGbmmrcIiP40UGcqrAuS9F80hrNjL4L83J-MJJyR5i8JlIJlRhjd',
-    alt: 'Dark rural landscape',
+    src: '/rebanho-nelore.jpg',
+    alt: 'Rebanho nelore em pastagem',
   },
   serviceShowcase: {
     src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAByVmtUmM2L9wVTKS3WjtmhTQO6VWWJTcT1oSqBKkcsxNA1NsYc3zQ6WdbDd8kzdcvgBWeCkW-U3nXQsj0DZddgnr-muA5VcRnaG-hJU73L7kzo8jwNah6X8Mc-MNWMXB12dJdag9VtvgO46mVCt9OEwF1OR7EKENzEqjxfyLKDQIiRQHTJLdB0YfcRoZ-IedCzcpk9YWCgfyWMgRZxTQGlcnnxQ9wpl6GkjZFrr4xrSpWxmC0cD9n2zQOVqDx12-dDCpmSTJ6Popf',
@@ -95,7 +95,7 @@ export const HOME = {
     headline: 'Sua fazenda fatura bem mas o dinheiro',
     headlineHighlight: 'some no final do mês?',
     subheading:
-      'Transformamos propriedades rurais em ecossistemas de alta rentabilidade através de inteligência operacional e rigor financeiro.',
+      'Transformamos sua fazenda em um negócio altamente lucrativo, unindo trabalho inteligente no campo e as contas na ponta do lápis.',
     ctaPrimary: 'Diagnosticar Minha Operação',
     ctaSecondary: 'Conhecer Metodologia',
     widget: {
@@ -104,7 +104,7 @@ export const HOME = {
     },
   },
   problems: {
-    sectionTitle: 'Onde a tradição encontra o gargalo.',
+    sectionTitle: 'Onde a tradição encontra o Obstáculo.',
     sectionSubtitle:
       'Se a sua gestão ainda é baseada em intuição, você está operando abaixo do potencial real da sua terra.',
     cards: [
@@ -119,7 +119,7 @@ export const HOME = {
           'A operação é refém da presença física do proprietário. Sem processos, não há liberdade nem escalabilidade.',
       },
       {
-        title: 'Opacidade de Dados',
+        title: 'Confusão de Dados',
         description:
           'Decisões críticas tomadas no "sentimento". Falta de projeção de fluxo de caixa e custo de arroba produzido.',
       },
