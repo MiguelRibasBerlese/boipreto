@@ -79,7 +79,7 @@ export const IMAGES = {
   },
   contactAtmospheric: {
     src: '/escritorio.jpg',
-    alt: 'Escritório Central Boi Preto - Araguaína TO',
+    alt: 'Escritório Boi Preto',
   },
   contactMap: {
     src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDNPLc-JpZS0agVyf-tJI3wp_iw4emtji-KBSkAD8nmT3UzIS036dv_8QIAzZu4XJeEcyVMzUf_Kl2ydf_evtvUsfBSCmpeWiVF-6U8khJdyKZ80ETjxidYgwX31vXlhnsnRLfH17HoYZl7KwxqvFJ0Y3MOYChmkFkCopI_WM_L7wFX0zdAwdnPLnZrboA18LE2XvCS2gSoI4ueXLdZfDpklPvTzUQPMYjyxkVe1gHOgEJobOCdXeXqYStfsY7ii76nbPKXzx5zUAXc',
