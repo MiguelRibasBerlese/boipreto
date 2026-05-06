@@ -26,7 +26,7 @@ export default function BrazilMap({ states }: BrazilMapProps) {
   return (
     <div className="flex flex-col lg:flex-row gap-8 w-full items-start">
       {/* Map */}
-      <div className="w-full lg:w-[60%]">
+      <div className="w-full lg:w-[60%] border border-primary/30 rounded-sm p-4 bg-white/5">
         <ComposableMap
           projection="geoMercator"
           projectionConfig={{ scale: 680, center: [-54, -15] }}
@@ -113,18 +113,18 @@ export default function BrazilMap({ states }: BrazilMapProps) {
             </button>
           </div>
         ) : (
-          <div className="space-y-4 border-l-2 border-primary/20 pl-6">
-            <span className="font-label text-primary/40 uppercase tracking-[0.4em] text-[10px] block">
+          <div className="space-y-4 bg-zinc-900 border border-primary/40 rounded-sm p-6">
+            <span className="font-label text-primary uppercase tracking-widest text-xs block">
               Presença Territorial
             </span>
-            <p className="font-body text-on-surface-variant/50 text-base leading-relaxed italic">
+            <p className="font-body text-zinc-300 text-base leading-relaxed italic">
               Selecione um estado destacado para ver detalhes.
             </p>
             <div className="flex flex-wrap gap-2 mt-4">
               {ACTIVE_STATES.map((s) => (
                 <span
                   key={s}
-                  className="font-label text-[9px] uppercase tracking-widest border border-primary/30 text-primary/60 px-2 py-1 rounded-sm"
+                  className="font-label text-[9px] uppercase tracking-widest border border-primary/60 text-primary bg-primary/10 px-2 py-1 rounded-sm"
                 >
                   {s}
                 </span>
