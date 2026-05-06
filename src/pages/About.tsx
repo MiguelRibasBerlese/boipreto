@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import Image from '../components/ui/Image';
+import BrazilMap from '../components/BrazilMap';
 import { ABOUT, ATUACAO_STATES, IMAGES } from '../constants/site';
 
 /**
@@ -101,40 +102,8 @@ export default function About() {
           <h2 className="font-headline text-5xl italic text-on-surface">{territory.title}</h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-          <div className="lg:col-span-2 relative group">
-            <div className="aspect-square lg:aspect-video bg-surface-container rounded-sm p-6 flex items-center justify-center border border-primary/10">
-              <Image
-                className="w-[90%] h-[90%] object-contain opacity-60 hover:opacity-80 transition-opacity duration-500 brightness-150 grayscale"
-                src={IMAGES.aboutMap.src}
-                alt={IMAGES.aboutMap.alt}
-              />
-
-              {/* Floating State Points */}
-              {ATUACAO_STATES.map((s) => (
-                <div
-                  key={s.code}
-                  className={`absolute ${s.mapTop} ${s.mapLeft} group-hover:scale-110 transition-transform`}
-                >
-                  <div className="flex flex-col items-center">
-                    <span className="w-2 h-2 bg-primary rounded-full animate-pulse shadow-[0_0_10px_rgba(187,131,28,0.7)]"></span>
-                    <span className="mt-2 bg-surface-container-highest px-2 py-0.5 rounded-sm text-[7px] leading-none font-label font-bold text-primary uppercase tracking-widest border border-primary/20 whitespace-nowrap">
-                      {s.state}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            {ATUACAO_STATES.map((s) => (
-              <div key={s.code} className="bg-surface-container p-6 rounded-sm border-l-4 border-primary/20 hover:border-primary/80 transition-colors">
-                <h4 className="font-label text-primary font-bold text-xs uppercase tracking-[0.2em] mb-2">{s.state}</h4>
-                <p className="text-on-surface-variant text-sm leading-relaxed">{s.desc}</p>
-              </div>
-            ))}
-          </div>
+        <div className="w-full">
+          <BrazilMap states={ATUACAO_STATES} />
         </div>
       </section>
     </div>
