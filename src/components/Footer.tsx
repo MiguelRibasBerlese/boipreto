@@ -23,15 +23,29 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
-          {FOOTER_LINKS.map((link) => (
-            <Link
-              key={link.label}
-              to={link.path}
-              className="font-label text-[9px] uppercase tracking-[0.2em] text-on-surface/50 hover:text-primary transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {FOOTER_LINKS.map((link) => {
+            const isExternal = link.path.startsWith('http');
+            const baseClass = "font-label text-[9px] uppercase tracking-[0.2em] text-on-surface/50 hover:text-primary hover:scale-105 transition-all duration-300 cursor-pointer";
+            return isExternal ? (
+              <a
+                key={link.label}
+                href={link.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={baseClass}
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.label}
+                to={link.path}
+                className={baseClass}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </div>
 
         <div className="font-label text-[9px] uppercase tracking-[0.2em] text-on-surface/30">

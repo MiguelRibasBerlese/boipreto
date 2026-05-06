@@ -34,8 +34,8 @@ export const NAV_CTA = 'Falar com Consultor';
 export const FOOTER_LINKS: FooterLink[] = [
   { label: 'Privacidade', path: '#' },
   { label: 'Termos', path: '#' },
-  { label: 'LinkedIn', path: '#' },
-  { label: 'Instagram', path: '#' },
+  { label: 'LinkedIn', path: 'https://www.linkedin.com/in/boi-preto-solu%C3%A7%C3%B5es-agropecu%C3%A1rias-68595419b/' },
+  { label: 'Instagram', path: 'https://www.instagram.com/boipretoconsultoria/' },
 ];
 
 // ─── Imagens ──────────────────────────────────────────────────────────────────

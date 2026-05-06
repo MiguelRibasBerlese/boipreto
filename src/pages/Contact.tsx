@@ -70,7 +70,16 @@ export default function Contact() {
                 <Tractor className="w-[200px] h-[200px]" />
               </div>
 
-              <form className="space-y-8 relative z-10">
+              <form
+                className="space-y-8 relative z-10"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  window.open(
+                    'https://wa.me/5563999999999?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20contato%20da%20equipe%20Boi%20Preto.',
+                    '_blank'
+                  );
+                }}
+              >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-2">
                     <label className="font-label text-[10px] uppercase tracking-widest text-primary/70 font-bold">{form.fields.name.label}</label>
@@ -117,7 +126,7 @@ export default function Contact() {
                 </div>
 
                 <div className="pt-6">
-                  <button type="submit" className="w-full bg-primary text-on-primary font-label font-bold py-5 rounded-md text-sm uppercase tracking-widest hover:bg-primary/90 transition-all duration-300">
+                  <button type="submit" className="w-full bg-primary text-on-primary font-label font-bold py-5 rounded-md text-sm uppercase tracking-widest hover:bg-primary/90 hover:scale-105 hover:brightness-110 transition-all duration-300 cursor-pointer">
                     {form.submitLabel}
                   </button>
                   <p className="text-center text-on-surface-variant/40 text-[10px] mt-4 uppercase tracking-[0.2em]">

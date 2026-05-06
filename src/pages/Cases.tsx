@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { TrendingUp, Landmark, ChevronRight } from 'lucide-react';
 import Image from '../components/ui/Image';
 import { CASES, IMAGES } from '../constants/site';
@@ -195,12 +196,18 @@ export default function Cases() {
           {cta.headline} <br/><span className="text-primary">{cta.headlineHighlight}</span>
         </h3>
         <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-          <button className="px-10 py-5 bg-primary text-on-primary font-label uppercase tracking-[0.25em] text-[10px] font-bold rounded hover:bg-primary/90 transition-all duration-300 shadow-lg shadow-primary/10">
+          <Link
+            to="/contato"
+            className="px-10 py-5 bg-primary text-on-primary font-label uppercase tracking-[0.25em] text-[10px] font-bold rounded hover:bg-primary/90 hover:scale-105 hover:brightness-110 transition-all duration-300 shadow-lg shadow-primary/10 cursor-pointer"
+          >
             {cta.ctaPrimary}
-          </button>
-          <button className="px-10 py-5 bg-transparent border border-primary/30 text-primary font-label uppercase tracking-[0.25em] text-[10px] font-bold rounded hover:bg-primary/5 hover:border-primary transition-all duration-300">
+          </Link>
+          <Link
+            to="/servicos"
+            className="px-10 py-5 bg-transparent border border-primary/30 text-primary font-label uppercase tracking-[0.25em] text-[10px] font-bold rounded hover:bg-primary/10 hover:scale-105 hover:brightness-110 transition-all duration-300 cursor-pointer"
+          >
             {cta.ctaSecondary}
-          </button>
+          </Link>
         </div>
       </section>
     </div>

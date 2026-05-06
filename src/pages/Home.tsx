@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { TrendingUp, Landmark, Brain, LineChart, BarChart3 } from 'lucide-react';
 import Image from '../components/ui/Image';
 import { HOME, IMAGES } from '../constants/site';
@@ -43,12 +44,18 @@ export default function Home() {
               {hero.subheading}
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
-              <button className="bg-primary text-on-primary px-10 py-5 font-label font-bold uppercase tracking-[0.2em] text-[10px] hover:bg-primary/90 transition-all duration-500 shadow-2xl">
+              <Link
+                to="/contato"
+                className="bg-primary text-on-primary px-10 py-5 font-label font-bold uppercase tracking-[0.2em] text-[10px] hover:bg-primary/90 hover:scale-105 hover:brightness-110 transition-all duration-300 shadow-2xl cursor-pointer"
+              >
                 {hero.ctaPrimary}
-              </button>
-              <button className="border border-primary/30 text-primary px-10 py-5 font-label font-bold uppercase tracking-[0.2em] text-[10px] hover:bg-primary/5 transition-all duration-500">
+              </Link>
+              <Link
+                to="/servicos"
+                className="border border-primary/30 text-primary px-10 py-5 font-label font-bold uppercase tracking-[0.2em] text-[10px] hover:bg-primary/10 hover:scale-105 hover:brightness-110 transition-all duration-300 cursor-pointer"
+              >
                 {hero.ctaSecondary}
-              </button>
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -173,9 +180,12 @@ export default function Home() {
         <div className="container mx-auto px-8 relative z-10 text-center">
           <h2 className="font-logo text-5xl md:text-7xl font-bold mb-10 tracking-tighter max-w-4xl mx-auto">{cta.headline}</h2>
           <p className="font-body text-xl md:text-2xl text-on-surface-variant mb-16 max-w-2xl mx-auto opacity-70">{cta.subheading}</p>
-          <button className="bg-primary text-on-primary px-16 py-7 font-label font-bold uppercase tracking-[0.3em] text-[11px] hover:scale-105 transition-all duration-500 shadow-[0_20px_50px_rgba(187,131,28,0.2)]">
+          <Link
+            to="/contato"
+            className="bg-primary text-on-primary px-16 py-7 font-label font-bold uppercase tracking-[0.3em] text-[11px] hover:bg-primary/90 hover:scale-105 hover:brightness-110 transition-all duration-300 shadow-[0_20px_50px_rgba(187,131,28,0.2)] cursor-pointer"
+          >
             {cta.button}
-          </button>
+          </Link>
         </div>
       </section>
     </div>

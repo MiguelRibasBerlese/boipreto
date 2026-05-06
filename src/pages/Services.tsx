@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { BarChart3, ClipboardCheck, LineChart, ArrowRight, CheckCircle2 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import Image from '../components/ui/Image';
@@ -75,10 +76,13 @@ export default function Services() {
                   )}
                 </div>
                 <div className="mt-auto flex pt-8 border-t border-white/5">
-                  <button className="bg-primary text-on-primary font-body text-xs uppercase font-bold px-8 py-3 rounded-md hover:bg-primary/90 transition-all active:scale-95 flex items-center gap-2">
+                  <Link
+                    to="/contato"
+                    className="bg-primary text-on-primary font-body text-xs uppercase font-bold px-8 py-3 rounded-md hover:bg-primary/90 hover:scale-105 hover:brightness-110 transition-all duration-300 active:scale-95 flex items-center gap-2 cursor-pointer"
+                  >
                     {service.cta}
                     <ArrowRight className="w-4 h-4" />
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
             );
@@ -106,12 +110,18 @@ export default function Services() {
               {showcase.description}
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-primary text-on-primary px-8 py-4 rounded font-body uppercase text-xs font-bold active:scale-95 transition-transform hover:bg-primary/90">
+              <Link
+                to="/contato"
+                className="bg-primary text-on-primary px-8 py-4 rounded font-body uppercase text-xs font-bold hover:bg-primary/90 hover:scale-105 hover:brightness-110 transition-all duration-300 active:scale-95 cursor-pointer"
+              >
                 {showcase.ctaPrimary}
-              </button>
-              <button className="px-8 py-4 rounded border border-primary/40 font-body uppercase text-xs font-bold text-primary hover:bg-primary/10 transition-all">
+              </Link>
+              <Link
+                to="/sobre"
+                className="px-8 py-4 rounded border border-primary/40 font-body uppercase text-xs font-bold text-primary hover:bg-primary/10 hover:scale-105 hover:brightness-110 transition-all duration-300 cursor-pointer"
+              >
                 {showcase.ctaSecondary}
-              </button>
+              </Link>
             </div>
           </div>
         </div>

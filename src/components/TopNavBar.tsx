@@ -30,10 +30,10 @@ export default function TopNavBar() {
               key={link.path}
               to={link.path}
               className={cn(
-                "font-label uppercase tracking-widest text-[10px] transition-colors duration-300",
-                location.pathname === link.path 
-                  ? "text-primary border-b border-primary/50 pb-1" 
-                  : "text-on-surface opacity-60 hover:text-primary hover:opacity-100"
+                "font-label uppercase tracking-widest text-[10px] transition-colors duration-200 hover:text-primary relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-primary after:transition-all after:duration-300 hover:after:w-full",
+                location.pathname === link.path
+                  ? "text-primary after:w-full pb-1"
+                  : "text-on-surface opacity-60 hover:opacity-100"
               )}
             >
               {link.name}
@@ -41,9 +41,9 @@ export default function TopNavBar() {
           ))}
         </div>
 
-        <Link 
+        <Link
           to="/contato"
-          className="bg-primary text-on-primary font-label uppercase tracking-widest text-[10px] font-bold px-6 py-3 rounded active:scale-95 transition-transform duration-150"
+          className="bg-primary text-on-primary font-label uppercase tracking-widest text-[10px] font-bold px-6 py-3 rounded hover:bg-primary/90 hover:scale-105 hover:brightness-110 transition-all duration-300 active:scale-95 cursor-pointer"
         >
           Falar com Consultor
         </Link>
