@@ -3,8 +3,7 @@ import { useState } from 'react';
 import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
 import type { StateInfo } from '../types';
 
-const GEO_URL =
-  'https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/brazil-states.geojson';
+const GEO_URL = '/brazil.json';
 
 const ACTIVE_STATES = ['Pará', 'Maranhão', 'Tocantins', 'Piauí', 'Goiás', 'Minas Gerais'];
 
