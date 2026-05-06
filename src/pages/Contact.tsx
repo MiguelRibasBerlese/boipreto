@@ -138,14 +138,20 @@ export default function Contact() {
 
             {/* Asymmetric Map Integration */}
             <div className="mt-8 grid grid-cols-3 gap-4">
-              <div className="col-span-2 h-40 bg-surface-container-high rounded-xl overflow-hidden border border-white/5">
-                <Image
-                  className="w-full h-full object-cover filter grayscale contrast-125 opacity-20"
-                  src={IMAGES.contactMap.src}
-                  alt={IMAGES.contactMap.alt}
+              <div className="col-span-2 w-full h-full min-h-[250px] rounded-sm overflow-hidden border border-white/5">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.123456789!2d-48.1950!3d-7.1920!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Jos%C3%A9+de+Brito%2C+794+-+St.+Anhanguera%2C+Aragua%C3%ADna+-+TO%2C+77818-530!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, filter: 'grayscale(100%) contrast(1.1) brightness(0.8)' }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Localização Boi Preto Consultoria"
+                  className="w-full h-full min-h-[250px] rounded-sm"
                 />
               </div>
-              <div className="h-40 bg-primary/10 flex flex-col items-center justify-center text-center p-4 rounded-xl border border-primary/30">
+              <div className="h-full min-h-[250px] bg-primary/10 flex flex-col items-center justify-center text-center p-4 rounded-xl border border-primary/30">
                 <span className="font-headline italic text-primary text-2xl">{hub.name}</span>
                 <span className="font-label text-[10px] uppercase tracking-widest text-primary/60 mt-1">{hub.label}</span>
               </div>
