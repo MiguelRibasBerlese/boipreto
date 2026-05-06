@@ -32,7 +32,7 @@ export default function About() {
       {/* Asymmetric Content Block: Nelore x Angus */}
       <section className="mb-40 overflow-hidden">
         <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-          <div className="relative">
+          <div className="relative overflow-visible">
             <div className="bg-surface-container overflow-hidden rounded-sm group">
               <Image
                 className="w-full max-h-[500px] object-contain grayscale brightness-75 group-hover:scale-105 transition-transform duration-700"
@@ -41,7 +41,7 @@ export default function About() {
               />
             </div>
             {/* Heritage Badge Overlapping */}
-            <div className="absolute -bottom-8 -right-8 bg-surface-container-high p-8 shadow-2xl max-w-[280px] border border-primary/20">
+            <div className="absolute bottom-4 -right-8 bg-surface-container-high p-8 shadow-2xl max-w-[85%] z-10 border border-primary/20">
               <span className="font-headline italic text-2xl text-primary mb-2 block">{breeds.neloreBadge}</span>
               <p className="font-body text-xs text-on-surface-variant leading-relaxed">{breeds.neloreNote}</p>
             </div>
