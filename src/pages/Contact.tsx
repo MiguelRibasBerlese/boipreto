@@ -2,48 +2,44 @@ import { MapPin, Mail, Tractor } from 'lucide-react';
 import Image from '../components/ui/Image';
 import { CONTACT, IMAGES } from '../constants/site';
 
-/**
- * Página de contato — layout assimétrico com coluna editorial (endereço, imagem atmosférica)
- * e formulário de captura de lead com campos de nome, WhatsApp, estado e descrição do desafio.
- */
 export default function Contact() {
   const { badge, headline, headlineHighlight, supporting, address, email, form, hub } = CONTACT;
 
   return (
-    <div className="relative pt-32 pb-20 overflow-hidden">
+    <div className="relative pt-20 md:pt-32 pb-12 md:pb-20 overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-5xl opacity-5 pointer-events-none bg-[radial-gradient(circle_at_center,#BB831C_0%,transparent_70%)]"></div>
 
-      <div className="max-w-7xl mx-auto px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-start">
           {/* Left Column: Editorial Content */}
-          <div className="lg:col-span-5 flex flex-col space-y-8">
+          <div className="lg:col-span-5 flex flex-col space-y-6 md:space-y-8">
             <div className="inline-flex items-center px-3 py-1 bg-primary/10 border border-primary/20 rounded-full w-fit">
               <span className="text-primary font-headline italic text-sm">{badge}</span>
             </div>
 
-            <h1 className="font-logo text-5xl md:text-7xl font-bold leading-[1] text-on-surface mb-8 tracking-tighter">
+            <h1 className="font-logo text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-[1] text-on-surface mb-4 md:mb-8 tracking-tighter">
               {headline} <span className="italic text-primary block mt-2">{headlineHighlight}</span>
             </h1>
 
-            <p className="text-on-surface-variant text-lg leading-relaxed max-w-md">
+            <p className="text-on-surface-variant text-base md:text-lg leading-relaxed max-w-md">
               {supporting}
             </p>
 
-            <div className="pt-8 space-y-6">
+            <div className="pt-4 md:pt-8 space-y-5 md:space-y-6">
               <a
                 href={address.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-4 group hover:opacity-80 transition-opacity"
               >
-                <MapPin className="text-primary w-8 h-8 group-hover:scale-110 transition-transform shrink-0" />
+                <MapPin className="text-primary w-7 md:w-8 h-7 md:h-8 group-hover:scale-110 transition-transform shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-logo font-bold text-on-surface uppercase tracking-widest text-xs">{address.label}</h4>
                   <p className="text-on-surface-variant text-sm mt-1">{address.value}</p>
                 </div>
               </a>
               <div className="flex items-start gap-4 group">
-                <Mail className="text-primary w-8 h-8 group-hover:scale-110 transition-transform" />
+                <Mail className="text-primary w-7 md:w-8 h-7 md:h-8 group-hover:scale-110 transition-transform shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-label font-bold text-on-surface uppercase tracking-widest text-xs">{email.label}</h4>
                   <p className="text-on-surface-variant text-sm mt-1">{email.value}</p>
@@ -52,7 +48,7 @@ export default function Contact() {
             </div>
 
             {/* Atmospheric Image */}
-            <div className="relative h-64 w-full rounded-xl overflow-hidden mt-8 shadow-2xl border border-white/5">
+            <div className="relative h-48 md:h-64 w-full rounded-xl overflow-hidden mt-4 md:mt-8 shadow-2xl border border-white/5">
               <Image
                 className="w-full h-full object-cover grayscale-[0.2] contrast-[1.1]"
                 src={IMAGES.contactAtmospheric.src}
@@ -64,14 +60,14 @@ export default function Contact() {
 
           {/* Right Column: High-Precision Form */}
           <div className="lg:col-span-7">
-            <div className="bg-surface-container p-8 md:p-12 rounded-xl relative overflow-hidden border border-primary/20 shadow-2xl">
+            <div className="bg-surface-container p-6 md:p-8 lg:p-12 rounded-xl relative overflow-hidden border border-primary/20 shadow-2xl">
               {/* Heritage Background Badge */}
               <div className="absolute -top-10 -right-10 opacity-[0.03] rotate-12">
                 <Tractor className="w-[200px] h-[200px]" />
               </div>
 
               <form
-                className="space-y-8 relative z-10"
+                className="space-y-6 md:space-y-8 relative z-10"
                 onSubmit={(e) => {
                   e.preventDefault();
                   window.open(
@@ -80,7 +76,7 @@ export default function Contact() {
                   );
                 }}
               >
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                   <div className="space-y-2">
                     <label className="font-label text-[10px] uppercase tracking-widest text-primary/70 font-bold">{form.fields.name.label}</label>
                     <input
@@ -125,8 +121,8 @@ export default function Contact() {
                   ></textarea>
                 </div>
 
-                <div className="pt-6">
-                  <button type="submit" className="w-full bg-primary text-on-primary font-label font-bold py-5 rounded-md text-sm uppercase tracking-widest hover:bg-primary/90 hover:scale-105 hover:brightness-110 transition-all duration-300 cursor-pointer">
+                <div className="pt-4 md:pt-6">
+                  <button type="submit" className="w-full bg-primary text-on-primary font-label font-bold py-4 md:py-5 rounded-md text-sm uppercase tracking-widest hover:bg-primary/90 hover:scale-105 hover:brightness-110 transition-all duration-300 cursor-pointer">
                     {form.submitLabel}
                   </button>
                   <p className="text-center text-on-surface-variant/40 text-[10px] mt-4 uppercase tracking-[0.2em]">
@@ -137,8 +133,8 @@ export default function Contact() {
             </div>
 
             {/* Asymmetric Map Integration */}
-            <div className="mt-8 grid grid-cols-3 gap-4">
-              <div className="col-span-2 w-full h-full min-h-[250px] rounded-sm overflow-hidden border border-white/5">
+            <div className="mt-6 md:mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="sm:col-span-2 w-full min-h-[200px] sm:min-h-[250px] rounded-sm overflow-hidden border border-white/5">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.123456789!2d-48.1950!3d-7.1920!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Jos%C3%A9+de+Brito%2C+794+-+St.+Anhanguera%2C+Aragua%C3%ADna+-+TO%2C+77818-530!5e0!3m2!1spt-BR!2sbr!4v1234567890"
                   width="100%"
@@ -148,10 +144,10 @@ export default function Contact() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Localização Boi Preto Consultoria"
-                  className="w-full h-full min-h-[250px] rounded-sm"
+                  className="w-full h-full min-h-[200px] sm:min-h-[250px] rounded-sm"
                 />
               </div>
-              <div className="h-full min-h-[250px] bg-primary/10 flex flex-col items-center justify-center text-center p-4 rounded-xl border border-primary/30">
+              <div className="min-h-[120px] sm:min-h-[250px] bg-primary/10 flex flex-col items-center justify-center text-center p-4 rounded-xl border border-primary/30">
                 <span className="font-headline italic text-primary text-2xl">{hub.name}</span>
                 <span className="font-label text-[10px] uppercase tracking-widest text-primary/60 mt-1">{hub.label}</span>
               </div>

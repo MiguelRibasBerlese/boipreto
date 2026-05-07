@@ -10,12 +10,12 @@ import { BRAND, FOOTER_LINKS } from '../constants/site';
 export default function Footer() {
   return (
     <footer className="bg-background border-t border-white/5">
-      <div className="flex flex-col md:flex-row justify-between items-center w-full px-12 py-12 max-w-screen-2xl mx-auto">
+      <div className="flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-12 py-10 md:py-12 max-w-screen-2xl mx-auto">
         <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
           <Image
             src="/logo.png"
             alt="Boi Preto Consultoria"
-            className="h-[100px] w-auto mb-4"
+            className="h-[70px] md:h-[100px] w-auto mb-4"
           />
           <span className="font-logo font-bold text-sm text-primary tracking-wide">
             {BRAND.name} Consultoria
