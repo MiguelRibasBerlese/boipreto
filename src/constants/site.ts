@@ -42,7 +42,7 @@ export const FOOTER_LINKS: FooterLink[] = [
 
 export const IMAGES = {
   heroAngus: {
-    src: '/Boi-Nelore.jpg',
+    src: '/rebanho.jpeg',
     alt: 'Boi nelore em pastagem ao amanhecer',
   },
   farmEquipment: {
