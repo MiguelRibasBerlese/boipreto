@@ -32,7 +32,7 @@ export default function About() {
             <div className="bg-surface-container overflow-hidden rounded-sm group">
               <Image
                 className="w-full max-h-[500px] object-contain brightness-75 group-hover:scale-105 transition-transform duration-700"
-                src="/bezerro.jpeg"
+                src="/bezzero.jpeg"
                 alt={IMAGES.aboutNelore.alt}
               />
             </div>
