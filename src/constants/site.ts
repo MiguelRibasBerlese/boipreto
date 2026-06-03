@@ -66,8 +66,8 @@ export const IMAGES = {
     alt: 'Boi nelore e angus - equilíbrio entre raças',
   },
   aboutExecutive: {
-    src: '/escritorio.jpg',
-    alt: 'Equipe Boi Preto Consultoria no escritório',
+    src: '/subistituirmesa.jpg',
+    alt: 'Equipe Boi Preto Consultoria',
   },
   aboutMap: {
     src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuByQn6Y5wNQuqTDUI4ZgGuIJv_qp8hc9qmHwJCe31lbDH2LNXGpj3rn0SzO7hnH3GBt2pnwwFa20tZr7bBDEUPcC8OpQRSUMaKl9xVjLCdxHIQOHiTF6k8iqHzjgSZe6zj1fymhxkspvn_FLWkO5Dt91a5jWVT9vjSoOaqKI-yoC2531hOC6qGPMJfB4d_mUitxzJKGaoUgcpqJ0ierzH3jBRvsfgSm4lUeMB8ZLwHrOSngzg81PTp64XZr2qJBu33SPVKtXaTbTz94',
@@ -78,8 +78,8 @@ export const IMAGES = {
     alt: 'Gado pastando - Fazenda Nova Era',
   },
   contactAtmospheric: {
-    src: '/escritorio.jpg',
-    alt: 'Escritório Boi Preto',
+    src: '/subistituirmesa.jpg',
+    alt: 'Equipe Boi Preto Consultoria',
   },
   contactMap: {
     src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDNPLc-JpZS0agVyf-tJI3wp_iw4emtji-KBSkAD8nmT3UzIS036dv_8QIAzZu4XJeEcyVMzUf_Kl2ydf_evtvUsfBSCmpeWiVF-6U8khJdyKZ80ETjxidYgwX31vXlhnsnRLfH17HoYZl7KwxqvFJ0Y3MOYChmkFkCopI_WM_L7wFX0zdAwdnPLnZrboA18LE2XvCS2gSoI4ueXLdZfDpklPvTzUQPMYjyxkVe1gHOgEJobOCdXeXqYStfsY7ii76nbPKXzx5zUAXc',
