@@ -39,7 +39,7 @@ export default function Cases() {
             playsInline
             preload="metadata"
           >
-            <source src="/videocliente.MOV" type="video/mp4" />
+            <source src="https://jpy2vpxj0xcygex9.public.blob.vercel-storage.com/videocliente.MOV" type="video/mp4" />
             Seu navegador não suporta reprodução de vídeo.
           </video>
         </div>
