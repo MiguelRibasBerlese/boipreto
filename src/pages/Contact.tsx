@@ -71,7 +71,7 @@ export default function Contact() {
                 onSubmit={(e) => {
                   e.preventDefault();
                   window.open(
-                    'https://wa.me/5563999999999?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20contato%20da%20equipe%20Boi%20Preto.',
+                    'https://wa.me/556391019161?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20contato%20da%20equipe%20Boi%20Preto.',
                     '_blank'
                   );
                 }}
