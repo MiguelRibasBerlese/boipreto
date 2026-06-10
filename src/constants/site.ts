@@ -42,7 +42,7 @@ export const FOOTER_LINKS: FooterLink[] = [
 
 export const IMAGES = {
   heroAngus: {
-    src: '/rebanho.jpeg',
+    src: '/Boi-Nelore.jpg',
     alt: 'Boi nelore em pastagem ao amanhecer',
   },
   farmEquipment: {
@@ -50,8 +50,8 @@ export const IMAGES = {
     alt: 'High-tech farm equipment',
   },
   neloreHome: {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDymf36lNDp5qo45zddKqGvpv4wPIWzzvQzy9RAE591kAfounzvWTENJJYtUB9AOvpIryzsXdBeWS4eOpSVMTWI8vEs2lOxtjzRWiH67C_a_jOI-KgzAoa-NfIattQDrqa4I986dIGKHKDFEQkuuboP7NS2Fx49zroqVQ2gD6KQPHmDIs6QiYs4IFrXmN818RnZxYkA-pECfbfbybdZi8HTB8VNx7OAr2V57g1g9Hzf6pkKJtDqdQolCh4Px--8f2Aw9CLh06OCHVpl',
-    alt: 'Nelore bull',
+    src: '/Boi-Nelore.jpg',
+    alt: 'Boi nelore em pastagem',
   },
   ctaBackground: {
     src: '/Rebanho-Nelore.jpg',
