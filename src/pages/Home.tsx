@@ -144,9 +144,9 @@ export default function Home() {
                   <span className="border border-primary/40 text-primary px-3 md:px-4 py-1 font-label text-[9px] uppercase tracking-[0.3em] backdrop-blur-md">{solution.imageLabel}</span>
                 </div>
               </div>
-              <div className="aspect-square overflow-hidden relative group border border-primary/10">
+              <div className="aspect-[3/2] overflow-hidden relative group border border-primary/10">
                 <Image
-                  className="w-full h-full object-contain grayscale opacity-50 transition-transform duration-1000 group-hover:scale-110 group-hover:grayscale-0"
+                  className="w-full h-full object-cover grayscale opacity-50 transition-transform duration-1000 group-hover:scale-110 group-hover:grayscale-0"
                   src={IMAGES.neloreHome.src}
                   alt={IMAGES.neloreHome.alt}
                 />
