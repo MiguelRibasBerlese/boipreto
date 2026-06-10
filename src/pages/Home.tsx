@@ -146,7 +146,7 @@ export default function Home() {
               </div>
               <div className="aspect-square overflow-hidden relative group border border-primary/10">
                 <Image
-                  className="w-full h-full object-cover grayscale opacity-50 transition-transform duration-1000 group-hover:scale-110 group-hover:grayscale-0"
+                  className="w-full h-full object-contain grayscale opacity-50 transition-transform duration-1000 group-hover:scale-110 group-hover:grayscale-0"
                   src={IMAGES.neloreHome.src}
                   alt={IMAGES.neloreHome.alt}
                 />
