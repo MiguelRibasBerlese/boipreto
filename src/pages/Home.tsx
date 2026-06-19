@@ -175,12 +175,20 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8 relative z-10 text-center">
           <h2 className="font-logo text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-8 md:mb-10 tracking-tighter max-w-4xl mx-auto">{cta.headline}</h2>
           <p className="font-body text-lg md:text-xl lg:text-2xl text-on-surface-variant mb-10 md:mb-16 max-w-2xl mx-auto opacity-70">{cta.subheading}</p>
-          <Link
-            to="/contato"
-            className="inline-block bg-primary text-on-primary px-10 md:px-16 py-5 md:py-7 font-label font-bold uppercase tracking-[0.3em] text-[11px] hover:bg-primary/90 hover:scale-105 hover:brightness-110 transition-all duration-300 shadow-[0_20px_50px_rgba(187,131,28,0.2)] cursor-pointer"
-          >
-            {cta.button}
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/contato"
+              className="inline-block bg-primary text-on-primary px-10 md:px-16 py-5 md:py-7 font-label font-bold uppercase tracking-[0.3em] text-[11px] hover:bg-primary/90 hover:scale-105 hover:brightness-110 transition-all duration-300 shadow-[0_20px_50px_rgba(187,131,28,0.2)] cursor-pointer"
+            >
+              {cta.button}
+            </Link>
+            <Link
+              to="/formacao"
+              className="inline-block border border-primary/30 text-primary px-10 md:px-16 py-5 md:py-7 font-label font-bold uppercase tracking-[0.3em] text-[11px] hover:bg-primary/10 hover:scale-105 hover:brightness-110 transition-all duration-300 cursor-pointer"
+            >
+              Sou Consultor, Quero Crescer
+            </Link>
+          </div>
         </div>
       </section>
     </div>
