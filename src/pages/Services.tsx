@@ -46,7 +46,9 @@ export default function Services() {
                 viewport={{ once: true }}
                 className={`${service.colSpan} ${service.bg} rounded-lg p-8 relative overflow-hidden group border border-white/5 shadow-2xl`}
               >
-                <div className="absolute top-4 left-4 opacity-5 font-body text-6xl font-bold text-primary">{service.id}</div>
+                          <div className="absolute top-4 right-4 text-9xl font-bold text-surface-container-high opacity-20">
+            {service.id}
+          </div>
                 <div className="flex justify-between items-start mb-10 md:mb-12">
                   {Icon && <Icon className="text-primary w-10 h-10" />}
                   {service.badge && (
