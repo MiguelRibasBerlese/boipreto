@@ -10,6 +10,7 @@ import Services from './pages/Services';
 import Cases from './pages/Cases';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Formacao from './pages/Formacao';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="sobre" element={<About />} />
           <Route path="contato" element={<Contact />} />
         </Route>
+        <Route path="/formacao" element={<Formacao />} />
       </Routes>
     </Router>
   );
