@@ -194,7 +194,7 @@ export const SERVICES_DATA: Service[] = [
     id: '03',
     iconName: 'LineChart',
     title: 'Análise de Indicadores',
-      'Uma solução de consultoria 100% online para produtores rurais, criada para transformar dados brutos da fazenda em inteligência gerencial e direção estratégica, sem a necessidade de visitas presenciais.',
+    description: 'Uma solução de consultoria 100% online para produtores rurais, criada para transformar dados brutos da fazenda em inteligência gerencial e direção estratégica, sem a necessidade de visitas presenciais.',
     cta: 'Analisar Meus Indicadores',
     colSpan: 'md:col-span-7',
     bg: 'bg-surface',
