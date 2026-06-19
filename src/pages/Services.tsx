@@ -46,40 +46,42 @@ export default function Services() {
                 viewport={{ once: true }}
                 className={`${service.colSpan} ${service.bg} rounded-lg p-8 relative overflow-hidden group border border-white/5 shadow-2xl`}
               >
-                          <div className="absolute top-4 right-4 text-9xl font-bold text-surface-container-high opacity-20">
-            {service.id}
-          </div>
-                <div className="flex justify-between items-start mb-10 md:mb-12">
-                  {Icon && <Icon className="text-primary w-10 h-10" />}
-                  {service.badge && (
-                    <div className="bg-primary/10 px-3 py-1 rounded border border-primary/20">
-                      <span className="font-headline italic text-xs text-primary">{service.badge}</span>
-                    </div>
-                  )}
+                <div className="absolute top-4 right-4 text-9xl font-bold text-surface-container-high opacity-20 -z-10">
+                  {service.id}
                 </div>
-                <h3 className="font-logo font-bold text-2xl md:text-3xl mb-4 text-on-surface">{service.title}</h3>
-                <div className="mb-8">
-                  <p className="text-on-surface-variant text-sm font-body mb-2 opacity-60 uppercase tracking-tighter italic">O que é</p>
-                  <p className="text-on-surface text-base">{service.description}</p>
-                  {service.features && (
-                    <ul className="mt-4 space-y-2">
-                      {service.features.map((f) => (
-                        <li key={f} className="flex items-center gap-2 text-xs font-body text-on-surface-variant">
-                          <CheckCircle2 className="text-primary w-4 h-4 shrink-0" />
-                          {f}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-                <div className="mt-auto flex pt-8 border-t border-white/5">
-                  <Link
-                    to="/contato"
-                    className="bg-primary text-on-primary font-body text-xs uppercase font-bold px-8 py-3 rounded-md hover:bg-primary/90 hover:scale-105 hover:brightness-110 transition-all duration-300 active:scale-95 flex items-center gap-2 cursor-pointer"
-                  >
-                    {service.cta}
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
+                <div className="relative z-10">
+                  <div className="flex justify-between items-start mb-10 md:mb-12">
+                    {Icon && <Icon className="text-primary w-10 h-10" />}
+                    {service.badge && (
+                      <div className="bg-primary/10 px-3 py-1 rounded border border-primary/20">
+                        <span className="font-headline italic text-xs text-primary">{service.badge}</span>
+                      </div>
+                    )}
+                  </div>
+                  <h3 className="font-logo font-bold text-2xl md:text-3xl mb-4 text-on-surface">{service.title}</h3>
+                  <div className="mb-8">
+                    <p className="text-on-surface-variant text-sm font-body mb-2 opacity-60 uppercase tracking-tighter italic">O que é</p>
+                    <p className="text-on-surface text-base">{service.description}</p>
+                    {service.features && (
+                      <ul className="mt-4 space-y-2">
+                        {service.features.map((f) => (
+                          <li key={f} className="flex items-center gap-2 text-xs font-body text-on-surface-variant">
+                            <CheckCircle2 className="text-primary w-4 h-4 shrink-0" />
+                            {f}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                  <div className="mt-auto flex pt-8 border-t border-white/5">
+                    <Link
+                      to="/contato"
+                      className="bg-primary text-on-primary font-body text-xs uppercase font-bold px-8 py-3 rounded-md hover:bg-primary/90 hover:scale-105 hover:brightness-110 transition-all duration-300 active:scale-95 flex items-center gap-2 cursor-pointer"
+                    >
+                      {service.cta}
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
                 </div>
               </motion.div>
             );
