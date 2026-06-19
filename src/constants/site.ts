@@ -193,11 +193,28 @@ export const SERVICES_DATA: Service[] = [
   {
     id: '03',
     iconName: 'LineChart',
+    title: 'Análise de Indicadores',
+    badge: '100% Online',
+    description:
+      'Uma solução de consultoria 100% online para produtores rurais, criada para transformar dados brutos da fazenda em inteligência gerencial e direção estratégica, sem a necessidade de visitas presenciais.',
+    cta: 'Analisar Meus Indicadores',
+    colSpan: 'md:col-span-7',
+    bg: 'bg-surface',
+    features: [
+      'Consolidação de dados de rebanho, pesagens e despesas.',
+      'Cálculo de KPIs financeiros (Custo do @, Margem Líquida).',
+      'Cálculo de KPIs produtivos (GMD, Taxa de Lotação).',
+      'Reuniões de direcionamento e envio de relatório executivo.',
+    ],
+  },
+  {
+    id: '04',
+    iconName: 'LineChart',
     title: 'Projeção Agropecuária',
     description:
       'Planejamento de longo prazo para o futuro da sua fazenda. Desenhamos a rota segura para os próximos anos, focando em fazer a terra e o rebanho crescerem, além de preparar o terreno para a sucessão familiar.',
     cta: 'Iniciar Planejamento',
-    colSpan: 'md:col-span-12',
+    colSpan: 'md:col-span-5',
     bg: 'bg-surface-container',
     features: ['Previsão e Controle do Fluxo de Caixa', 'Proteção contra os altos e baixos do mercado (Hedge)'],
   },
