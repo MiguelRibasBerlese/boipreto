@@ -22,8 +22,8 @@ export default function App() {
           <Route path="cases" element={<Cases />} />
           <Route path="sobre" element={<About />} />
           <Route path="contato" element={<Contact />} />
+          <Route path="formacao" element={<Formacao />} />
         </Route>
-        <Route path="/formacao" element={<Formacao />} />
       </Routes>
     </Router>
   );
